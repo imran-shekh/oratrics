@@ -1,0 +1,134 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1c202c;
+  color: #e0e0f0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+h1, h2 {
+  margin-bottom: 12px;
+}
+
+/* ===== Cards ===== */
+.metrics {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.metric-card {
+  background: #161a22;
+  padding: 18px 22px;
+  border-radius: 10px;
+  flex: 1;
+  border: 1px solid #23283a;
+}
+
+.metric-card span {
+  display: block;
+  font-size: 14px;
+  color: #a1a1b3;
+}
+
+.metric-card strong {
+  font-size: 22px;
+}
+
+/* ===== Forms ===== */
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+input, select {
+  background: #0f1117;
+  border: 1px solid #2a2f45;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  width: auto;
+  margin-right: 10px;
+}
+
+input::placeholder {
+  color: #6b6f8a;
+ 
+}
+
+button {
+  background: #3b82f6;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+  
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:disabled {
+  background: #374151;
+  cursor: not-allowed;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #23283a;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #161a22;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #161a22;
+}
+
+/* ===== Action buttons ===== */
+.actions button {
+  margin-right: 6px;
+  background: #1f2937;
+}
+
+.actions button:hover {
+  background: #374151;
+}
+
+.actions button.converted {
+  background: #16a34a;
+}
+
+.actions button.no-show {
+  background: #dc2626;
+}
+
+.actions button.completed {
+  background: #f59e0b;
+}
